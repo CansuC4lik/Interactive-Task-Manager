@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f0fe99;
+}
+#to-doApp {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    border-left: 5px solid #333;
+}
+
+li:hover {
+    transform: translateX(5px);
+}
+
+li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+li button:hover {
+    background: #e9ecef;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+    border-left-color: #96e85f;
+}
+
+#button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#button:hover {
+    background-color: #444;
+}
